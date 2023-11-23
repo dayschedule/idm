@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "types": ["@cloudflare/workers-types"],
+    "esModuleInterop" : true,
+    "allowSyntheticDefaultImports": true
+  }
+}
