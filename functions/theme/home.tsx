@@ -89,7 +89,9 @@ export const Home = (props: SiteData) => (
           <div class="row">
             <div class="col-md-8 offset-md-2">
               <div class="text-center">
-                <h1 class="display-4 fw-bold mb-3">URL Shortener</h1>
+                <h1 class="display-4 fw-bold mb-3">
+                  An ultrafast URL shortener for the Edges
+                </h1>
                 <p class="fs-4">
                   An open-source URL shortener to create shorten link with
                   Cloudflare workers. Use SaaS or Deploy on Cloudflare pages
