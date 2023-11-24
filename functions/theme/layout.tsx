@@ -2,7 +2,7 @@ import { SiteData } from "../models/siteData";
 
 export const Layout = (props: SiteData) => {
   return (
-    <html lang="en" data-bs-theme="dark">
+    <html lang="en" data-bs-theme="light">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -64,23 +64,6 @@ export const Layout = (props: SiteData) => {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="/countries">
-                    Features
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/pricing">
-                    Pricing
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/contact">
-                    Contact us
-                  </a>
-                </li>
-              </ul>
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
                   <a
                     class="nav-link"
                     href="#"
@@ -100,7 +83,7 @@ export const Layout = (props: SiteData) => {
           </div>
         </nav>
         <main>{props.children}</main>
-        <section class="bg-body-primary bg-grident text-light">
+        <section class="bg-body-primary bg-grident">
           <div class="container py-5">
             <div class="row">
               <div class="col-md-10">
@@ -131,20 +114,10 @@ export const Layout = (props: SiteData) => {
               <br />
               All Rights Reserved.
             </p>
-            <ul class="list-inline mb-5">
-              <li class="list-inline-item me-3">
-                <a href="/terms">Terms of Service</a>
-              </li>
-              <li class="list-inline-item me-3">
-                <a href="/contact">Contact us</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="/about">About us</a>
-              </li>
-            </ul>
           </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars/dist/handlebars.min.js"></script>
         <script src="/static/js/main.js"></script>
       </body>
     </html>

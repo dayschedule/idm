@@ -8,7 +8,6 @@ import { cors } from 'hono/cors';
 const app = new Hono<{ Bindings: Bindings }>();
 
 // Assets must be before CORS
-// Design https://screely.com/
 app.get('/static/*', async (ctx) => {
   return await ctx.env.ASSETS.fetch(ctx.req.raw);
 });

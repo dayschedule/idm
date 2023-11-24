@@ -8,6 +8,19 @@ const website = new Hono<{ Bindings: Bindings }>();
 
 website.get('/', async (ctx) => {
   const { cf = {} } = ctx.req as any;
+  const data = [
+    {
+      key: 'github',
+      url: 'https://github.com/vickyrathee/idm',
+      short_url: `https://idm.in/github`,
+      params: {
+        url_medium: 'search',
+        utm_campaign: 'website',
+      },
+      created_at: new Date(),
+    },
+  ];
+
   const props: SiteData = {
     meta: {
       title: 'URL Shortener',
@@ -16,6 +29,7 @@ website.get('/', async (ctx) => {
       canonical: '/',
       country: cf.country,
     },
+    links: data,
   };
   return ctx.html(Home(props));
 });
