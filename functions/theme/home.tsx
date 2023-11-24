@@ -84,13 +84,17 @@ const LinkList = (props: SiteData) => {
 export const Home = (props: SiteData) => (
   <Layout {...props}>
     <div>
-      <section class="hero px-3 py-5 border-bottom bg-light">
+      <section class="hero py-5 border-bottom bg-light">
         <div class="container">
           <div class="row">
             <div class="col-md-8 offset-md-2">
               <div class="text-center">
                 <h1 class="display-4 fw-bold mb-3">URL Shortener</h1>
-                <p class="fs-4">Create free short links!</p>
+                <p class="fs-4">
+                  An open-source URL shortener to create shorten link with
+                  Cloudflare workers. Use SaaS or Deploy on Cloudflare pages
+                  with custom domain to build your own short link generator.
+                </p>
               </div>
               <div class="card shadow">
                 <div class="card-body m-lg-5">
@@ -119,7 +123,100 @@ export const Home = (props: SiteData) => (
                     </div>
                   </form>
                   <LinkList {...props}></LinkList>
+                  <p class="small">
+                    <i>
+                      Note: The public short links are auto-expired after 30
+                      days, sign up for a longer duration.
+                    </i>
+                  </p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 bg-info-subtle">
+                <div class="card-body">
+                  <i class="bi bi-calendar-date-fill fs-1"></i>
+                  <h3 class="card-title my-3">Custom Expiration Date</h3>
+                  <p class="lead">
+                    Set a specific expiration date for your shortened links to
+                    expire after a certain period.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 bg-primary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-bar-chart-fill fs-1"></i>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="card-title my-3">Report & Analytics</h3>
+                    <span class="badge bg-danger my-auto">soon</span>
+                  </div>
+                  <p class="lead">
+                    Track and analyze the performance of your shortened links
+                    with detailed analytics and insights.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 bg-warning-subtle">
+                <div class="card-body">
+                  <i class="bi bi-globe fs-1"></i>
+                  <h3 class="card-title my-3">Branded Links</h3>
+                  <p class="lead">
+                    Create branded or custom short links that reflect your brand
+                    or company name.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <div class="text-center">
+                <h2 class="display-4 fw-bold">
+                  Scalable, Open-source, and unparalleled performance.
+                </h2>
+                <p class="fs-4">
+                  Experience unparalleled performance and lightning-fast
+                  response times with cutting-edge url shortener solution
+                  powered by{" "}
+                  <a
+                    href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                    target="_blank"
+                    rel="nofollow"
+                  >
+                    Bootstrap 5
+                  </a>{" "}
+                  ,{" "}
+                  <a href="https://hono.dev/" target="_blank" rel="nofollow">
+                    Hono.dev
+                  </a>
+                  , and{" "}
+                  <a
+                    href="https://workers.cloudflare.com/"
+                    target="_blank"
+                    rel="nofollow"
+                  >
+                    Cloudflare worker
+                  </a>{" "}
+                  technology.
+                </p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a
+                  rel="nofollow"
+                  target="_blank"
+                  href="https://github.com/dayschedule/idm"
+                  class="btn btn-dark btn-lg my-3"
+                >
+                  <i class="bi bi-github me-2"></i> View on Github
+                </a>
               </div>
             </div>
           </div>

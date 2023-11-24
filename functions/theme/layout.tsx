@@ -74,7 +74,7 @@ export const Layout = (props: SiteData) => {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" target="_blank" rel="nofollow">
+                  <a class="nav-link" href="https://github.com/dayschedule/idm" target="_blank" rel="nofollow">
                     <i class="bi bi-github fs-4"></i>
                   </a>
                 </li>
@@ -83,30 +83,6 @@ export const Layout = (props: SiteData) => {
           </div>
         </nav>
         <main>{props.children}</main>
-        <section class="bg-body-primary bg-grident">
-          <div class="container py-5">
-            <div class="row">
-              <div class="col-md-10">
-                <h2 class="display-5 fw-bold">
-                  Sign up for your free api key.
-                </h2>
-                <p class="lead me-5">
-                  Create your free account to created unlimited free short-links
-                </p>
-              </div>
-              <div class="col-md-2 my-auto">
-                <a
-                  class="btn btn-lg btn-light px-5"
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#loginModal"
-                >
-                  Sign up
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
         <footer class="border-top py-5 text-center">
           <div class="container">
             <p>

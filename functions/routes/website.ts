@@ -23,9 +23,9 @@ website.get('/', async (ctx) => {
 
   const props: SiteData = {
     meta: {
-      title: 'URL Shortener',
+      title: 'URL Shortener - Short link generator with Cloudflare worker',
       description:
-        'Create short links, QR Codes, and Link-in-bio pages with cloudflare worker for Free',
+        'Open-source short link generator to create shorten url with Cloudflare worker, custom expiration, branded links and analytics',
       canonical: '/',
       country: cf.country,
     },
