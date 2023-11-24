@@ -1,6 +1,7 @@
 {
-  "name": "idm",
+  "name": "idm.in",
   "version": "0.0.0",
+  "description": "An open-source URL shortener to create shorten link with Cloudflare worker and pages. Deploy on Cloudflare for custom domain for free!",
   "scripts": {
     "ng": "ng",
     "devstart": "wrangler pages dev ./public --compatibility-date=2023-10-22 --kv=SHORTLINKS",
