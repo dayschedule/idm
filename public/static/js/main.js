@@ -39,7 +39,7 @@ function getTemplate() {
   return Handlebars.compile(`<div class="d-flex justify-content-start me-3">
   <img src={{icon}} width="48" height="48" />
 </div>
-<div class="d-flex justify-content-between w-100">
+<div class="d-flex justify-content-between overflow-hidden w-100">
   <div>
     <div class="mb-1">
       <a
@@ -59,7 +59,7 @@ function getTemplate() {
       </button>
     </div>
     <a
-      class="text-muted text-decoration-none"
+      class="text-muted text-truncate text-decoration-none"
       href={{url}}
       target="_blank"
       rel="noopener noreferrer"

@@ -18,7 +18,7 @@ const LinkList = (props: SiteData) => {
           <div class="d-flex justify-content-start me-3">
             <img src={getIcon(link.url)} width="48" height="48" />
           </div>
-          <div class="d-flex justify-content-between w-100">
+          <div class="d-flex justify-content-between overflow-hidden w-100">
             <div>
               <div class="mb-1">
                 <a
@@ -38,7 +38,7 @@ const LinkList = (props: SiteData) => {
                 </button>
               </div>
               <a
-                class="text-muted text-decoration-none"
+                class="text-muted text-truncate text-decoration-none"
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -169,7 +169,10 @@ export const Home = (props: SiteData) => (
               <div class="card h-100 bg-warning-subtle">
                 <div class="card-body">
                   <i class="bi bi-globe fs-1"></i>
-                  <h3 class="card-title my-3">Branded Links</h3>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="card-title my-3">Branded Links</h3>
+                    <span class="badge bg-danger my-auto">soon</span>
+                  </div>
                   <p class="lead">
                     Create branded or custom short links that reflect your brand
                     or company name.
