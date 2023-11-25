@@ -17,6 +17,25 @@ export const Layout = (props: SiteData) => {
           media="print"
           onload="this.media='all'"
         ></link>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/static/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/static/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/static/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/static/site.webmanifest" />
+
         <title>{props.meta.title} - IDM</title>
         {props.meta.description && (
           <>
@@ -39,14 +58,14 @@ export const Layout = (props: SiteData) => {
         />
       </head>
       <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom-1 shadow-lg fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom-1 shadow-lg fixed-top">
           <div class="container">
             <a class="navbar-brand" href="/">
               <img
                 src="/static/img/logo.png"
                 alt="Logo"
-                width="200"
-                height="58"
+                width="150"
+                height="60"
                 class="d-inline-block align-top"
               />
             </a>
@@ -74,7 +93,12 @@ export const Layout = (props: SiteData) => {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/dayschedule/idm" target="_blank" rel="nofollow">
+                  <a
+                    class="nav-link"
+                    href="https://github.com/dayschedule/idm"
+                    target="_blank"
+                    rel="nofollow"
+                  >
                     <i class="bi bi-github fs-4"></i>
                   </a>
                 </li>

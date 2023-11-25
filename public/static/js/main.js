@@ -1,4 +1,4 @@
-const shortenedLinks = [];
+let shortenedLinks = [];
 
 const form = document.getElementById("urlShortenForm");
 if (form) {
@@ -22,7 +22,7 @@ if (form) {
       .then((response) => response.json())
       .then((data) => {
         shortenedLinks.push(data);
-        displayShortenedLinks(shortenedLinks);
+        displayShortenedLinks([data]);
         saveToLocalStorage(shortenedLinks);
       })
       .catch((error) => {
@@ -135,6 +135,7 @@ function renderShortenedLinks() {
     const savedLinks = JSON.parse(localStorage.getItem("links"));
     if (savedLinks && savedLinks.length > 0) {
       displayShortenedLinks(savedLinks);
+      shortenedLinks = savedLinks;
     }
   } catch (e) {
     console.log("localStorage error", e);
@@ -145,11 +146,11 @@ function copyToClipboard(text) {
   console.log("Copying: To be implemented", text);
 }
 
-function editLink(key) {
+function editLink() {
   console.log("Editing link with key: To be implemented", key);
 }
 
-function deleteLink(key) {
+function deleteLink() {
   console.log("Deleting link with key: To be implemented", key);
 }
 

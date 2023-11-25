@@ -3,6 +3,7 @@ import { Bindings } from '../types/bindings';
 import { ShortLink } from '../models/shortlink';
 import { Home } from '../theme/home';
 import { SiteData } from '../models/siteData';
+import { appendParamsToURL } from '../helper/utility';
 
 const website = new Hono<{ Bindings: Bindings }>();
 
@@ -41,9 +42,10 @@ website.get('/:id', async (ctx) => {
   });
 
   if (link && link.url) {
-    return ctx.redirect(link.url, 302);
+    const url = appendParamsToURL(link.url, link.params);
+    return ctx.redirect(url, 302);
   } else {
-    return ctx.json({ message: 'No link found' }, 404);
+    return ctx.redirect('https://idm.in/', 302);
   }
 });
 

@@ -58,7 +58,7 @@ const LinkList = (props: SiteData) => {
                 </button>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#" onClick="edit">
+                    <a class="dropdown-item" href="#" onClick="editLink">
                       Edit
                     </a>
                   </li>
@@ -66,7 +66,7 @@ const LinkList = (props: SiteData) => {
                     <a
                       class="dropdown-item text-danger"
                       href="#"
-                      onClick="delete"
+                      onClick="deleteLink"
                     >
                       Delete
                     </a>
@@ -89,7 +89,7 @@ export const Home = (props: SiteData) => (
           <div class="row">
             <div class="col-md-8 offset-md-2">
               <div class="text-center">
-                <h1 class="display-4 fw-bold mb-3">
+                <h1 class="display-3 fw-bold mb-3">
                   An ultrafast URL shortener for the Edges
                 </h1>
                 <p class="fs-4">
