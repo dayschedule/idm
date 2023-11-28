@@ -185,7 +185,7 @@ export const Home = (props: SiteData) => (
             <div class="col-md-8 offset-md-2">
               <div class="text-center">
                 <h2 class="display-4 fw-bold">
-                  Scalable, Open-source, and unparalleled performance.
+                  Scalable, open-source, and unparalleled performance.
                 </h2>
                 <p class="fs-4">
                   Experience unparalleled performance and lightning-fast
@@ -214,13 +214,17 @@ export const Home = (props: SiteData) => (
                 </p>
               </div>
               <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-primary btn-lg my-3 me-3">
+                  <i class="bi bi-person-plus-fill me-2"></i>
+                  Join waitlist
+                </a>
                 <a
                   rel="nofollow"
                   target="_blank"
                   href="https://github.com/dayschedule/idm"
                   class="btn btn-dark btn-lg my-3"
                 >
-                  <i class="bi bi-github me-2"></i> View on Github
+                  <i class="bi bi-github me-2"></i> Star on Github
                 </a>
               </div>
             </div>

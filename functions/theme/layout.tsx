@@ -119,6 +119,7 @@ export const Layout = (props: SiteData) => {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/handlebars/dist/handlebars.min.js"></script>
         <script src="/static/js/main.js"></script>
+        <script src="https://chimpstatic.com/mcjs-connected/js/users/a5e7773be0cd08da9daac425d/779b10239ca5209b5ecceb84b.js" async></script>
       </body>
     </html>
   );
