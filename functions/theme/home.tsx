@@ -135,6 +135,10 @@ export const Home = (props: SiteData) => (
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
           <div class="row my-5">
             <div class="col-md-4 mb-4">
               <div class="card h-100 bg-info-subtle">
@@ -181,9 +185,34 @@ export const Home = (props: SiteData) => (
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section>
+        <div class="container my-5 text-center">
           <div class="row">
             <div class="col-md-8 offset-md-2">
-              <div class="text-center">
+              <h2 class="display-4 fw-bold">
+                Track clicks, locations, devices, referral and more.
+              </h2>
+              <p class="fs-4">
+                Powerful traffic reports to monitor your short url metrics. e.g
+                number of clicks, location of users, device the link is opened
+                on etc.
+              </p>
+            </div>
+          </div>
+          <img
+            src="/static/img/short-url-analytics.webp"
+            alt="short url analytics"
+            class="img-fluid border shadow"
+          />
+        </div>
+      </section>
+      <section class="bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <div class="text-center my-5">
                 <h2 class="display-4 fw-bold">
                   Scalable, open-source, and unparalleled performance.
                 </h2>
@@ -213,10 +242,15 @@ export const Home = (props: SiteData) => (
                   technology.
                 </p>
               </div>
-              <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-primary btn-lg my-3 me-3">
+              <div class="d-flex justify-content-center mb-5">
+                <a
+                  rel="nofollow"
+                  target="_blank"
+                  href="https://mailchi.mp/1a99cf54a659/join-wailist"
+                  class="btn btn-light border active btn-lg my-3 me-3"
+                >
                   <i class="bi bi-person-plus-fill me-2"></i>
-                  Join waitlist
+                  Join Waitlist
                 </a>
                 <a
                   rel="nofollow"

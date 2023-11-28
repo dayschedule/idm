@@ -82,14 +82,14 @@ export const Layout = (props: SiteData) => {
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+                <li class="nav-item me-3">
                   <a
-                    class="nav-link"
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#loginModal"
+                    class="btn btn-dark"
+                    rel="nofollow"
+                    target="_blank"
+                    href="https://mailchi.mp/1a99cf54a659/join-wailist"
                   >
-                    Log in
+                    Join Waitlist
                   </a>
                 </li>
                 <li class="nav-item">
@@ -119,7 +119,10 @@ export const Layout = (props: SiteData) => {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/handlebars/dist/handlebars.min.js"></script>
         <script src="/static/js/main.js"></script>
-        <script src="https://chimpstatic.com/mcjs-connected/js/users/a5e7773be0cd08da9daac425d/779b10239ca5209b5ecceb84b.js" async></script>
+        <script
+          src="https://chimpstatic.com/mcjs-connected/js/users/a5e7773be0cd08da9daac425d/779b10239ca5209b5ecceb84b.js"
+          async
+        ></script>
       </body>
     </html>
   );
