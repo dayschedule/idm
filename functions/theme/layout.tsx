@@ -82,24 +82,14 @@ export const Layout = (props: SiteData) => {
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item me-3">
-                  <a
-                    class="btn btn-dark"
-                    rel="nofollow"
-                    target="_blank"
-                    href="https://mailchi.mp/1a99cf54a659/join-wailist"
-                  >
-                    Join Waitlist
-                  </a>
-                </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link"
+                    class="btn btn-dark"
                     href="https://github.com/dayschedule/idm"
                     target="_blank"
                     rel="nofollow"
                   >
-                    <i class="bi bi-github fs-4"></i>
+                    <i class="bi bi-github mx-2"></i> Github 
                   </a>
                 </li>
               </ul>
@@ -119,10 +109,6 @@ export const Layout = (props: SiteData) => {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/handlebars/dist/handlebars.min.js"></script>
         <script src="/static/js/main.js"></script>
-        <script
-          src="https://chimpstatic.com/mcjs-connected/js/users/a5e7773be0cd08da9daac425d/779b10239ca5209b5ecceb84b.js"
-          async
-        ></script>
       </body>
     </html>
   );

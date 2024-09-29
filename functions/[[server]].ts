@@ -33,7 +33,4 @@ app.notFound((c) => {
   return c.json({ error: 'No route found' }, 404);
 });
 
-// Print all routes
-app.showRoutes();
-
 export const onRequest = handle(app);

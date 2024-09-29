@@ -8,7 +8,7 @@ import { appendParamsToURL } from '../helper/utility';
 const website = new Hono<{ Bindings: Bindings }>();
 
 website.get('/', async (ctx) => {
-  const { cf = {} } = ctx.req as any;
+  const { cf } = ctx.req.raw;
   const data = [
     {
       key: 'github',
